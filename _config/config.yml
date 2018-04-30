@@ -1,0 +1,6 @@
+---
+Name: dynamic-elemental-customer-service-config
+---
+Dynamic\Elements\CustomerService\Elements\ElementCustomerService:
+  extensions:
+    - Dynamic\SilverStripeGeocoder\AddressDataExtension
