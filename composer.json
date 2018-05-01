@@ -1,7 +1,7 @@
 {
     "name": "dynamic/silverstripe-elemental-customer-service-block",
     "type": "silverstripe-vendormodule",
-    "description": "Additional accordion element for the SilverStripe Elemental module",
+    "description": "Additional customer service element for the SilverStripe Elemental module",
     "keywords": [
         "silverstripe",
         "elemental",

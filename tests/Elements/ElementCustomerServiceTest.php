@@ -2,12 +2,15 @@
 
 namespace Dynamic\Elements\Tests;
 
-
 use Dynamic\Elements\CustomerService\Elements\ElementCustomerService;
 use SilverStripe\Core\Injector\Injector;
 use SilverStripe\Dev\SapphireTest;
 use SilverStripe\Forms\FieldList;
 
+/**
+ * Class ElementCustomerServiceTest
+ * @package Dynamic\Elements\Tests
+ */
 class ElementCustomerServiceTest extends SapphireTest
 {
     /**
@@ -15,7 +18,7 @@ class ElementCustomerServiceTest extends SapphireTest
      */
     public function testGetCMSFields()
     {
-        $object = Injector::inst()->get(ElementCustomerService::class);
+        $object = Injector::inst()->create(ElementCustomerService::class);
         $fields = $object->getCMSFields();
         $this->assertInstanceOf(FieldList::class, $fields);
     }
