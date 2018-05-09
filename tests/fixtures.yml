@@ -69,7 +69,7 @@ Page:
     Title: 'Demo'
     ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.one
 
-Dynamic\Elements\Elements\ElementCustomerService:
+Dynamic\Elements\CustomerService\Elements\ElementCustomerService:
   one:
     Title: "Customer Service"
     Parent: =>DNADesign\Elemental\Models\ElementalArea.one
