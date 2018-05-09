@@ -8,10 +8,10 @@ Additional elements for the [SilverStripe Elemental](https://github.com/dnadesig
 [![Build Status](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-customer-service/badges/build.png?b=master)](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-customer-service/build-status/master)
 [![codecov](https://codecov.io/gh/dynamic/silverstripe-elemental-customer-service/branch/master/graph/badge.svg)](https://codecov.io/gh/dynamic/silverstripe-elemental-customer-service)
 
-[![Latest Stable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-customer-service-block/v/stable)](https://packagist.org/packages/dynamic/silverstripe-elemental-customer-service-block)
-[![Total Downloads](https://poser.pugx.org/dynamic/silverstripe-elemental-customer-service-block/downloads)](https://packagist.org/packages/dynamic/silverstripe-elemental-customer-service-block)
-[![Latest Unstable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-customer-service-block/v/unstable)](https://packagist.org/packages/dynamic/silverstripe-elemental-customer-service-block)
-[![License](https://poser.pugx.org/dynamic/silverstripe-elemental-customer-service-block/license)](https://packagist.org/packages/dynamic/silverstripe-elemental-customer-service-block)
+[![Latest Stable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-customer-service/v/stable)](https://packagist.org/packages/dynamic/silverstripe-elemental-customer-service)
+[![Total Downloads](https://poser.pugx.org/dynamic/silverstripe-elemental-customer-service/downloads)](https://packagist.org/packages/dynamic/silverstripe-elemental-customer-service)
+[![Latest Unstable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-customer-service/v/unstable)](https://packagist.org/packages/dynamic/silverstripe-elemental-customer-service)
+[![License](https://poser.pugx.org/dynamic/silverstripe-elemental-customer-service/license)](https://packagist.org/packages/dynamic/silverstripe-elemental-customer-service)
 
 
 ## Requirements
@@ -21,7 +21,7 @@ Additional elements for the [SilverStripe Elemental](https://github.com/dnadesig
 
 ## Installation
 
-`composer require dynamic/silverstripe-elemental-customer-service-block`
+`composer require dynamic/silverstripe-elemental-customer-service`
 
 ## Usage
 
