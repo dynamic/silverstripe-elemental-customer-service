@@ -9,6 +9,12 @@ use SilverStripe\Forms\FieldList;
 /**
  * Class ElementCustomerService
  * @package Dynamic\Elements\CustomerService\Elements
+ *
+ * @property string $Title
+ * @property string $Website
+ * @property string $Phone
+ * @property string $Email
+ * @property string $Fax
  */
 class ElementCustomerService extends BaseElement
 {
@@ -40,6 +46,7 @@ class ElementCustomerService extends BaseElement
         'Website' => 'Varchar(255)',
         'Phone' => 'Varchar(40)',
         'Email' => 'Varchar(255)',
+        'Fax' => 'Varchar(45)',
     ];
 
     /**

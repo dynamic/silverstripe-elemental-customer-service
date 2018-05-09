@@ -14,6 +14,7 @@
         <p>
             <a href="tel:{$Phone}">$Phone</a><br>
             <a href="emalto:{$Email}">$Email</a><br>
+            <% if $Fax %><a href="tel:$Fax">$Fax</a><br><% end_if %>
             <a href="$Website" target="_blank">$Website</a>
         </p>
     </div>
