@@ -1,6 +1,6 @@
 # SilverStripe Elemental Customer Service Block
 
-Additional elements for the [SilverStripe Elemental](https://github.com/dnadesign/silverstripe-elemental) module.
+Display a map, directions, and contact info for your location.
 
 [![Build Status](https://travis-ci.org/dynamic/silverstripe-elemental-customer-service.svg?branch=master)](https://travis-ci.org/dynamic/silverstripe-elemental-customer-service)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-customer-service/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-customer-service/?branch=master)
@@ -25,22 +25,11 @@ Additional elements for the [SilverStripe Elemental](https://github.com/dnadesig
 
 ## Usage
 
-Elemental Accordion Block will add the following Element to your site:
-
-* Customer Service (Various contact information)
+Adds a Customer Service block to display a map, directions and contact info for your location. Userful for a Contact Us page.
 
 ## Getting more elements
 
-Other elemental modules by Dynamic:
-
-* SilverStripe Elemental Blocks
-	* [Packagist](https://packagist.org/packages/dynamic/silverstripe-elemental-blocks)
-	* [GitHub](https://github.com/dynamic/silverstripe-elemental-blocks)
-* [SilverStripe Elemental Accordion](https://github.com/dynamic/silverstripe-elemental-accordion)
-* [SilverStripe Elemental Flexslider](https://github.com/dynamic/silverstripe-elemental-flexslider)  
-* [SilverStripe Elemental Blog](https://github.com/dynamic/silverstripe-elemental-blog)  
-* [SilverStripe Elemental Sponsors](https://github.com/dynamic/silverstripe-elemental-sponsors)  
-* [SilverStripe Elemental Testimonials](https://github.com/dynamic/silverstripe-elemental-testimonials) 
+See [Elemental modules by Dynamic](https://github.com/dynamic/silverstripe-elemental-blocks#included-blocks)
 
 ## Configuration
 
