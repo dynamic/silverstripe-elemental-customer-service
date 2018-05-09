@@ -1,0 +1,75 @@
+SilverStripe\Security\Group:
+  administrators:
+    Title: "Administrators"
+  site-owners:
+    Title: "Site Owners"
+
+SilverStripe\Security\Permission:
+  administrators:
+    Code: ADMIN
+    Type: 1
+    Group: =>SilverStripe\Security\Group.administrators
+  element-create:
+    Code: Create_Element
+    Type: 1
+    Group: =>SilverStripe\Security\Group.site-owners
+  element-edit:
+    Code: Edit_Element
+    Type: 1
+    Group: =>SilverStripe\Security\Group.site-owners
+  element-delete:
+    Code: Delete_Element
+    Type: 1
+    Group: =>SilverStripe\Security\Group.site-owners
+  element-publish:
+    Code: Publish_Element
+    Type: 1
+    Group: =>SilverStripe\Security\Group.site-owners
+  cms-access:
+    Code: CMS_ACCESS
+    Type: 1
+    Group: =>SilverStripe\Security\Group.site-owners
+  sitetree-view:
+    Code: SITETREE_VIEW_ALL
+    Type: 1
+    Group: =>SilverStripe\Security\Group.site-owners
+  sitetree-edit:
+    Code: SITETREE_EDIT_ALL
+    Type: 1
+    Group: =>SilverStripe\Security\Group.site-owners
+  cms-pages:
+    Code: CMS_ACCESS_CMSMain
+    Type: 1
+    Group: =>SilverStripe\Security\Group.site-owners
+
+SilverStripe\Security\Member:
+  admin:
+    FirstName: "Default"
+    Surname: "Admin"
+    Email: "defaultadmin"
+    Password: "dev"
+    Groups: =>SilverStripe\Security\Group.administrators
+  site-owner:
+    FirstName: "Site"
+    Surname: "Owner"
+    Email: "owner"
+    Password: "owner"
+    Groups: =>SilverStripe\Security\Group.site-owners
+  default:
+    FirstName: "Default"
+    Surname: "Member"
+    Email: "user"
+    Password: "user"
+
+DNADesign\Elemental\Models\ElementalArea:
+  one:
+
+Page:
+  default:
+    Title: 'Demo'
+    ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.one
+
+Dynamic\Elements\CustomerService\Elements\ElementCustomerService:
+  one:
+    Title: "Customer Service"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.one
