@@ -1,19 +1,31 @@
-<div class="row $ExtraClass">
-    <div class="col-md-4">
-        $AddressMap(300,300)
+<% if $Title && $ShowTitle %><h2 class="element__title">$Title</h2><% end_if %>
+<% if $Content %><div class="element__content">$Content</div><% end_if %>
+
+<div class="row">
+    <div class="col-md-6">
+        <% if $Address || $Address2 || $City || $State || $PostalCode || $Country %>
+            $AddressMap(767,767)
+        <% end_if %>
     </div>
-    <div class="col-md-8">
-        <h4>$Title</h4>
+
+    <div class="col-md-6">
+        <% if $Address || $Address2 || $City || $State || $PostalCode || $Country %>
         <p>
-            $Address<br><% if $Address2 %>$Address2<br><% end_if %>
-            $City, $State $PostalCode<br>
-            $Country
+            <% if $Address %>$Address<br><% if $Address2 %>$Address2<br><% end_if %><% end_if %>
+            <% if $City %>$City<% end_if %><% if $State %><% if $City %>, <% end_if %>$State<% end_if %><% if $PostalCode %> $PostalCode<% end_if %>
+            <% if $City || $State || $PostalCode %>
+            <br>
+            <% end_if %>
+            <% if $Country %>$Country<% end_if %>
         </p>
+        <% end_if %>
+        <% if $Phone || $Email || $Website %>
         <p>
-            <a href="tel:{$Phone}">$Phone</a><br>
-            <a href="emalto:{$Email}">$Email</a><br>
-            <% if $Fax %><a href="tel:$Fax">$Fax</a><br><% end_if %>
-            <a href="$Website" target="_blank">$Website</a>
+            <% if $Phone %><a href="tel:{$Phone}" title="Call $Phone">$Phone</a><br><% end_if %>
+            <% if $Email %><a href="emalto:{$Email}" title="Email $Email">$Email</a><br><% end_if %>
+            <% if $Fax %><a href="tel:$Fax" title="Email $Email">$Fax</a><br><% end_if %>
+            <% if $Website %><a href="$Website" target="_blank" title="Go to $Website">$Website</a><% end_if %>
         </p>
+        <% end_if %>
     </div>
 </div>
