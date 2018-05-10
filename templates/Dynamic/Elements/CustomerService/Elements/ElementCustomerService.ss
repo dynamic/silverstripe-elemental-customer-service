@@ -1,9 +1,7 @@
 <div class="row $ExtraClass">
-    <%--
     <div class="col-md-4">
         $AddressMap(300,300)
     </div>
-    --%>
     <div class="col-md-8">
         <h4>$Title</h4>
         <p>
