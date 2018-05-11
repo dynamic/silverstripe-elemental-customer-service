@@ -2,13 +2,16 @@
 <% if $Content %><div class="element__content">$Content</div><% end_if %>
 
 <div class="row">
+    <% if $Address || $Address2 || $City || $State || $PostalCode || $Country %>
     <div class="col-md-6">
-        <% if $Address || $Address2 || $City || $State || $PostalCode || $Country %>
-            $AddressMap(767,767)
-        <% end_if %>
+        $AddressMap(767,767)
     </div>
-
     <div class="col-md-6">
+    <% else %>
+    <div class="col-sm-12">
+    <% end_if %>
+
+
         <% if $Address || $Address2 || $City || $State || $PostalCode || $Country %>
         <p>
             <% if $Address %>$Address<br><% if $Address2 %>$Address2<br><% end_if %><% end_if %>

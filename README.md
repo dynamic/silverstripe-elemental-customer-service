@@ -27,6 +27,25 @@ Display a map, directions, and contact info for your location.
 
 Adds a Customer Service block to display a map, directions and contact info for your location. Userful for a Contact Us page.
 
+### Note
+In order to use the Geocoder and address map, you will have to create an [API key](https://developers.google.com/maps/documentation/javascript/get-api-key). It can be configured in your YML file like this:
+
+```
+Dynamic\SilverStripeGeocoder\GoogleGeocoder:
+  geocoder_api_key: 'your-key-here'
+```  
+
+## Screen Shots
+
+#### Front End sample of a Customer Service Element
+![Front End sample of a Customer Service Element](./readme-images/customer-service-block-sample.jpg)
+
+#### CMS - Customer Service Element Main Tab
+![CMS - Customer Service Element Main Tab](./readme-images/customer-service-block-cms.jpg)
+
+#### CMS - Customer Service Element - Address Tab
+![CMS - Customer Service Element - Address Tab](./readme-images/customer-service-block-cms-address.jpg)
+
 ## Getting more elements
 
 See [Elemental modules by Dynamic](https://github.com/dynamic/silverstripe-elemental-blocks#included-blocks)
