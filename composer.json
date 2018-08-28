@@ -14,9 +14,9 @@
         }
     ],
     "require": {
-        "dnadesign/silverstripe-elemental": "^2@dev",
+        "dnadesign/silverstripe-elemental": "^2@dev || ^3@dev",
         "dynamic/silverstripe-geocoder": "^1@dev",
-        "silverstripe/vendor-plugin": "^1.0@dev"
+        "silverstripe/vendor-plugin": "^1@dev"
     },
     "require-dev": {
         "phpunit/PHPUnit": "^5.7",
