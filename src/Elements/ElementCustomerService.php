@@ -5,6 +5,7 @@ namespace Dynamic\Elements\CustomerService\Elements;
 use DNADesign\Elemental\Models\BaseElement;
 use SilverStripe\Forms\EmailField;
 use SilverStripe\Forms\FieldList;
+use SilverStripe\ORM\FieldType\DBField;
 
 /**
  * Class ElementCustomerService
@@ -21,7 +22,7 @@ class ElementCustomerService extends BaseElement
     /**
      * @var string
      */
-    private static $icon = 'vendor/dnadesign/silverstripe-elemental/images/base.svg';
+    private static $icon = 'font-icon-block-content';
 
     /**
      * @var string
@@ -65,6 +66,24 @@ class ElementCustomerService extends BaseElement
         });
 
         return parent::getCMSFields();
+    }
+
+    /**
+     * @return DBHTMLText
+     */
+    public function getSummary()
+    {
+        return DBField::create_field('HTMLText', $this->getFullAddress())->Summary(20);
+    }
+
+    /**
+     * @return array
+     */
+    protected function provideBlockSchema()
+    {
+        $blockSchema = parent::provideBlockSchema();
+        $blockSchema['content'] = $this->getSummary();
+        return $blockSchema;
     }
 
     /**
