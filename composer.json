@@ -16,6 +16,7 @@
     "require": {
         "dnadesign/silverstripe-elemental": "^2@dev || ^3@dev",
         "dynamic/silverstripe-geocoder": "^1@dev",
+        "silverstripe/recipe-cms": "^1@dev || ^4@dev",
         "silverstripe/vendor-plugin": "^1@dev"
     },
     "require-dev": {
@@ -24,11 +25,6 @@
     },
     "config": {
         "process-timeout": 600
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        }
     },
     "autoload": {
         "psr-4": {
