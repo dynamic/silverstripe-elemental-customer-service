@@ -14,13 +14,12 @@
         }
     ],
     "require": {
-        "dnadesign/silverstripe-elemental": "^4@dev",
-        "dynamic/silverstripe-geocoder": "^1@dev",
-        "silverstripe/recipe-cms": "^4@dev",
-        "silverstripe/vendor-plugin": "^1@dev"
+        "dnadesign/silverstripe-elemental": "^4.0",
+        "dynamic/silverstripe-geocoder": "^1.0",
+        "silverstripe/vendor-plugin": "^1.0"
     },
     "require-dev": {
-        "phpunit/PHPUnit": "^5.7",
+        "phpunit/phpunit": "^5.7",
         "squizlabs/php_codesniffer": "*"
     },
     "config": {
