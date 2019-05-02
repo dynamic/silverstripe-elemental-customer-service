@@ -1,0 +1,13 @@
+en:
+  Dynamic\Elements\CustomerService\Elements\ElementCustomerService:
+    BlockType: 'Customer Service'
+    EmailLabel: 'Email'
+    FaxLabel: 'Fax'
+    LocationNameLabel: 'Location Name'
+    PhoneLabel: 'Phone'
+    PLURALNAME: 'Customer Service Elements'
+    PLURALS:
+      one: 'A Customer Service Element'
+      other: '{count} Customer Service Elements'
+    SINGULARNAME: 'Customer Service Element'
+    WebsiteLabel: 'Website'
