@@ -11,7 +11,7 @@
     <div class="col-sm-12">
     <% end_if %>
 
-
+        <% if $LocationName %><h3>$LocationName</h3><% end_if %>
         <% if $Address || $Address2 || $City || $State || $PostalCode || $Country %>
         <p>
             <% if $Address %>$Address<br><% if $Address2 %>$Address2<br><% end_if %><% end_if %>
