@@ -27,23 +27,13 @@ class ElementCustomerService extends BaseElement
     /**
      * @var string
      */
-    private static $singular_name = 'Customer Service Element';
-
-    /**
-     * @var string
-     */
-    private static $plural_name = 'Customer Service Elements';
-
-    /**
-     * @var string
-     */
     private static $table_name = 'ElementCustomerService';
 
     /**
      * @var array
      */
     private static $db = [
-        'Title' => 'Varchar(255)',
+        'LocationName' => 'Varchar(255)',
         'Website' => 'Varchar(255)',
         'Phone' => 'Varchar(40)',
         'Email' => 'Varchar(255)',
@@ -51,18 +41,36 @@ class ElementCustomerService extends BaseElement
     ];
 
     /**
+     * @param bool $includerelations
+     * @return array
+     */
+    public function fieldLabels($includerelations = true)
+    {
+        $labels = parent::fieldLabels($includerelations);
+
+        $labels['LocationName'] = _t(__CLASS__.'.LocationNameLabel', 'Location Name');
+        $labels['Website'] = _t(__CLASS__ . '.WebsiteLabel', 'Website');
+        $labels['Phone'] = _t(__CLASS__ . '.PhoneLabel', 'Phone');
+        $labels['Email'] = _t(__CLASS__ . '.EmailLabel', 'Email');
+        $labels['Fax'] = _t(__CLASS__ . '.FaxLabel', 'Fax');
+
+        return $labels;
+    }
+
+    /**
      * @return FieldList
      */
     public function getCMSFields()
     {
         $this->beforeUpdateCMSFields(function (FieldList $fields) {
-            $fields->dataFieldByName('Title')
-                ->setTitle('Name');
-
             if ($website = $fields->dataFieldByName('Website')) {
                 $website->setAttribute('placeholder', 'http://');
             }
-            $fields->replaceField('Email', EmailField::create('Email'));
+            $fields->replaceField(
+                'Email',
+                EmailField::create('Email')
+                    ->setTitle($this->fieldLabel('Email'))
+            );
         });
 
         return parent::getCMSFields();
