@@ -1,6 +1,14 @@
 # Change Log
 
-## [2.0.3](https://github.com/dynamic/silverstripe-elemental-customer-service/tree/2.0.3) (2019-03-20)
+## [2.0.4](https://github.com/dynamic/silverstripe-elemental-customer-service/tree/2.0.4) (2019-05-02)
+[Full Changelog](https://github.com/dynamic/silverstripe-elemental-customer-service/compare/2.0.3...2.0.4)
+
+**Merged pull requests:**
+
+- initial i18n [\#18](https://github.com/dynamic/silverstripe-elemental-customer-service/pull/18) ([jsirish](https://github.com/jsirish))
+- remove LeftAndMainExtension - no longer used [\#17](https://github.com/dynamic/silverstripe-elemental-customer-service/pull/17) ([jsirish](https://github.com/jsirish))
+
+## [2.0.3](https://github.com/dynamic/silverstripe-elemental-customer-service/tree/2.0.3) (2019-03-21)
 [Full Changelog](https://github.com/dynamic/silverstripe-elemental-customer-service/compare/2.0.2...2.0.3)
 
 **Closed issues:**
