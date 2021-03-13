@@ -25,7 +25,7 @@
         <% if $Phone || $Email || $Website %>
         <p>
             <% if $Phone %><a href="tel:{$Phone}" title="Call $Phone">$Phone</a><br><% end_if %>
-            <% if $Email %><a href="emalto:{$Email}" title="Email $Email">$Email</a><br><% end_if %>
+            <% if $Email %><a href="mailto:{$Email}" title="Email $Email">$Email</a><br><% end_if %>
             <% if $Fax %><a href="tel:$Fax" title="Email $Email">$Fax</a><br><% end_if %>
             <% if $Website %><a href="$Website" target="_blank" title="Go to $Website">$Website</a><% end_if %>
         </p>
