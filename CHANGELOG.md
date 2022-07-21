@@ -1,5 +1,16 @@
 # Change Log
 
+## [2.1.0](https://github.com/dynamic/silverstripe-elemental-customer-service/tree/2.1.0) (2022-07-20)
+
+## What's Changed
+* Fix up the mailto bug by @ethanjohnstone in https://github.com/dynamic/silverstripe-elemental-customer-service/pull/20
+* REFACTOR PHP8 and PHPUNIT 9 support by @jsirish in https://github.com/dynamic/silverstripe-elemental-customer-service/pull/21
+
+## New Contributors
+* @ethanjohnstone made their first contribution in https://github.com/dynamic/silverstripe-elemental-customer-service/pull/20
+
+**Full Changelog**: https://github.com/dynamic/silverstripe-elemental-customer-service/compare/2.0.4...2.1.0
+
 ## [2.0.4](https://github.com/dynamic/silverstripe-elemental-customer-service/tree/2.0.4) (2019-05-02)
 [Full Changelog](https://github.com/dynamic/silverstripe-elemental-customer-service/compare/2.0.3...2.0.4)
 
