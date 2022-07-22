@@ -2,10 +2,7 @@
 
 Display a map, directions, and contact info for your location.
 
-[![Build Status](https://travis-ci.org/dynamic/silverstripe-elemental-customer-service.svg?branch=master)](https://travis-ci.org/dynamic/silverstripe-elemental-customer-service)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-customer-service/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-customer-service/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-customer-service/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-customer-service/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-customer-service/badges/build.png?b=master)](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-customer-service/build-status/master)
+[![CI](https://github.com/dynamic/silverstripe-elemental-customer-service/actions/workflows/ci.yml/badge.svg)](https://github.com/dynamic/silverstripe-elemental-customer-service/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/dynamic/silverstripe-elemental-customer-service/branch/master/graph/badge.svg)](https://codecov.io/gh/dynamic/silverstripe-elemental-customer-service)
 
 [![Latest Stable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-customer-service/v/stable)](https://packagist.org/packages/dynamic/silverstripe-elemental-customer-service)
@@ -16,9 +13,8 @@ Display a map, directions, and contact info for your location.
 
 ## Requirements
 
-* silverstripe/recipe-cms: ^4@dev
-* dnadesign/silverstripe-elemental: ^4@dev
-* dynamic/silverstripe-geocoder: ^1@dev
+* dnadesign/silverstripe-elemental: ^4.8
+* dynamic/silverstripe-geocoder: ^1.0
 
 ## Installation
 
@@ -34,7 +30,7 @@ In order to use the Geocoder and address map, you will have to create an [API ke
 ```
 Dynamic\SilverStripeGeocoder\GoogleGeocoder:
   geocoder_api_key: 'your-key-here'
-```  
+```
 
 ## Screen Shots
 
