@@ -22,15 +22,15 @@
                 <% end_if %>
                 <% if $Country %>$Country<% end_if %>
             </p>
-            <% end_if %>
-            <% if $Phone || $Email || $Website %>
+        </address>
+        <% end_if %>
+        <% if $Phone || $Email || $Fax || $Website %>
             <p>
                 <% if $Phone %><a href="tel:{$Phone}" title="Call $Phone">$Phone</a><br><% end_if %>
                 <% if $Email %><a href="mailto:{$Email}" title="Email $Email">$Email</a><br><% end_if %>
                 <% if $Fax %><a href="tel:$Fax" title="Email $Email">$Fax</a><br><% end_if %>
                 <% if $Website %><a href="$Website" target="_blank" title="Go to $Website">$Website</a><% end_if %>
             </p>
-        </address>
         <% end_if %>
     </div>
 </div>

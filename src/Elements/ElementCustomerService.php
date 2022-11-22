@@ -86,19 +86,12 @@ class ElementCustomerService extends BaseElement
     }
 
     /**
-     * @return mixed|string|null
-     */
-    public function getElementSummary()
-    {
-        return $this->LocationName ? $this->LocationName : "No description";
-    }
-
-    /**
      * @return DBHTMLText
      */
     public function getSummary()
     {
-        return DBField::create_field('HTMLText', $this->getElementSummary())->Summary(20);
+        $label = $this->LocationName ? $this->LocationName : "No description";
+        return DBField::create_field('HTMLText', $label)->Summary(20);
     }
 
     /**
