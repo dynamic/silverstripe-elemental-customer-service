@@ -30,9 +30,15 @@ class ElementCustomerService extends BaseElement
     private static $table_name = 'ElementCustomerService';
 
     /**
+     * @var bool
+     */
+    private static $inline_editable = false;
+
+    /**
      * @var array
      */
     private static $db = [
+        'Content' => 'HTMLText',
         'LocationName' => 'Varchar(255)',
         'Website' => 'Varchar(255)',
         'Phone' => 'Varchar(40)',
@@ -71,9 +77,20 @@ class ElementCustomerService extends BaseElement
                 EmailField::create('Email')
                     ->setTitle($this->fieldLabel('Email'))
             );
+
+            $fields->dataFieldByName('Content')
+                ->setRows(8);
         });
 
         return parent::getCMSFields();
+    }
+
+    /**
+     * @return mixed|string|null
+     */
+    public function getElementSummary()
+    {
+        return $this->LocationName ? $this->LocationName : "No description";
     }
 
     /**
@@ -81,7 +98,7 @@ class ElementCustomerService extends BaseElement
      */
     public function getSummary()
     {
-        return DBField::create_field('HTMLText', $this->getFullAddress())->Summary(20);
+        return DBField::create_field('HTMLText', $this->getElementSummary())->Summary(20);
     }
 
     /**
