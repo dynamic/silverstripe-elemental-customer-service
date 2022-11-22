@@ -14,7 +14,7 @@ Display a map, directions, and contact info for your location.
 ## Requirements
 
 * dnadesign/silverstripe-elemental: ^4.8
-* dynamic/silverstripe-geocoder: ^1.0
+* dynamic/silverstripe-geocoder: ^2.0
 
 ## Installation
 
