@@ -1,5 +1,10 @@
 # Change Log
 
+## [2.2.0](https://github.com/dynamic/silverstripe-elemental-customer-service/tree/2.2.0) (2022-11-21)
+* REFACTOR require silverstripe-geocoder ^2.0 by @jsirish in https://github.com/dynamic/silverstripe-elemental-customer-service/pull/23
+
+**Full Changelog**: https://github.com/dynamic/silverstripe-elemental-customer-service/compare/2.1.1...2.2.0
+
 ## [2.1.0](https://github.com/dynamic/silverstripe-elemental-customer-service/tree/2.1.0) (2022-07-20)
 
 ## What's Changed
