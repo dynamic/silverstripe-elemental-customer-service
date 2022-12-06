@@ -1,11 +1,17 @@
 {
     "name": "dynamic/silverstripe-elemental-customer-service",
-    "type": "silverstripe-vendormodule",
-    "description": "Customer service element for the SilverStripe Elemental module",
-    "keywords": [
-        "silverstripe", "elemental", "blocks", "map", "location", "contact", "phone"
-    ],
+    "description": "Display a map, directions, and contact info for your location",
     "license": "BSD-3-Clause",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe",
+        "elemental",
+        "blocks",
+        "map",
+        "location",
+        "contact",
+        "phone"
+    ],
     "authors": [
         {
             "name": "Dynamic",
@@ -18,8 +24,15 @@
         "dynamic/silverstripe-geocoder": "^2.0"
     },
     "require-dev": {
-        "silverstripe/recipe-testing": "^2",
-        "squizlabs/php_codesniffer": "^3.0"
+        "silverstripe/recipe-testing": "^2"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Dynamic\\Elements\\CustomerService\\": "src/",
+            "Dynamic\\Elements\\CustomerService\\Tests\\": "tests/"
+        }
     },
     "config": {
         "allow-plugins": {
@@ -29,19 +42,6 @@
         },
         "process-timeout": 600
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.x-dev"
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "Dynamic\\Elements\\CustomerService\\": "src/",
-            "Dynamic\\Elements\\CustomerService\\Tests\\": "tests/"
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "scripts": {
         "lint": "vendor/bin/phpcs src/ tests/",
         "lint-clean": "vendor/bin/phpcbf src/ tests/"
