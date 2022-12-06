@@ -1,5 +1,13 @@
 # Change Log
 
+## [2.2.1](https://github.com/dynamic/silverstripe-elemental-customer-service/tree/2.2.1) (2022-11-05)
+
+* CI workflow to SS GHA by @jsirish in https://github.com/dynamic/silverstripe-elemental-customer-service/pull/25
+* REFACTOR template to Bootstrap card format by @jsirish in https://github.com/dynamic/silverstripe-elemental-customer-service/pull/24
+
+
+**Full Changelog**: https://github.com/dynamic/silverstripe-elemental-customer-service/compare/2.2.0...2.2.1
+
 ## [2.2.0](https://github.com/dynamic/silverstripe-elemental-customer-service/tree/2.2.0) (2022-11-21)
 * REFACTOR require silverstripe-geocoder ^2.0 by @jsirish in https://github.com/dynamic/silverstripe-elemental-customer-service/pull/23
 
