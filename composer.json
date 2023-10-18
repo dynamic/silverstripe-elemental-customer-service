@@ -21,7 +21,8 @@
     ],
     "require": {
         "dnadesign/silverstripe-elemental": "^5.0",
-        "dynamic/silverstripe-geocoder": "^3.0"
+        "dynamic/silverstripe-geocoder": "^3.0",
+        "silverstripe/framework": "^5.0"
     },
     "require-dev": {
         "silverstripe/recipe-testing": "^2"
