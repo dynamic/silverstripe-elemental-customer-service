@@ -1,18 +1,18 @@
 <% if $Title && $ShowTitle %><h2 class="element__title">$Title</h2><% end_if %>
 <% if $Content %><div class="element__content">$Content</div><% end_if %>
 
-<div class="row element__customer__service">
-    <div class="col-md-12 card">
-        <div class="row">
+<div class="row g-0 element__customer__service">
+    <div class="card mb-3">
+        <div class="row g-0">
             <% if $FullAddress %>
-            <div class="col-md-8 card-img-left">
-                $AddressMap(900,300)
-            </div>
-            <div class="col-md-4 card-body">
+                <div class="col-lg-8 col-12">
+                    $AddressMap(900,300,2)
+                </div>
+                <div class="card-body col-lg-4 col-12">
             <% else %>
-            <div class="col-sm-12 card-body">
+                <div class="card-body col-12">
             <% end_if %>
-                <% if $LocationName %><h3 class="card-title">$LocationName</h3><% end_if %>
+            <% if $LocationName %><h3 class="card-title">$LocationName</h3><% end_if %>
                 <div class="card-text">
                     <% if $FullAddress %>
                         <address>
