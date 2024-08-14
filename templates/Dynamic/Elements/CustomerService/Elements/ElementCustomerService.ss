@@ -22,7 +22,7 @@
                                 <% if $City || $State || $PostalCode %>
                                     <br>
                                 <% end_if %>
-                                <% if $Country %>$Country<% end_if %>
+                                <% if $Country %>$Country.UpperCase<% end_if %>
                             </p>
                         </address>
                     <% end_if %>
