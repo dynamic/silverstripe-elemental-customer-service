@@ -1,5 +1,7 @@
 # SilverStripe Elemental Customer Service Block
 
+[![Sponsors](https://img.shields.io/badge/Sponsor-Dynamic-ff69b4?logo=github-sponsors&logoColor=white)](https://github.com/sponsors/dynamic)
+
 Display a map, directions, and contact info for your location.
 
 [![CI](https://github.com/dynamic/silverstripe-elemental-customer-service/actions/workflows/ci.yml/badge.svg)](https://github.com/dynamic/silverstripe-elemental-customer-service/actions/workflows/ci.yml)
