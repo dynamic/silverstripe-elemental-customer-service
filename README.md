@@ -13,8 +13,10 @@ Display a map, directions, and contact info for your location.
 
 ## Requirements
 
-* dnadesign/silverstripe-elemental: ^4.8
-* dynamic/silverstripe-geocoder: ^2.0
+* SilverStripe ^6.0
+* PHP ^8.3
+* dnadesign/silverstripe-elemental: ^6.0
+* dynamic/silverstripe-geocoder: ^4.0
 
 ## Installation
 
@@ -60,6 +62,16 @@ See [Elemental modules by Dynamic](https://github.com/orgs/dynamic/repositories?
 ## Configuration
 
 See [SilverStripe Elemental Configuration](https://github.com/dnadesign/silverstripe-elemental#configuration)
+
+## Upgrading from version 3
+
+SilverStripe Elemental Customer Service 4.0 is compatible with SilverStripe 6. Key changes:
+
+- Updated to SilverStripe CMS 6
+- Requires PHP 8.3 or higher
+- Updated to Elemental 6 and Geocoder 4
+- Namespace changes for DataExtension and validation classes
+- No breaking changes to the API or templates
 
 ## Maintainers
 
