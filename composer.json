@@ -26,13 +26,13 @@
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "^8.3",
         "dnadesign/silverstripe-elemental": "^6.0",
         "dynamic/silverstripe-geocoder": "^4.0",
         "silverstripe/framework": "^6.0"
     },
     "require-dev": {
-        "silverstripe/recipe-testing": "^6"
+        "silverstripe/recipe-testing": "^4"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
