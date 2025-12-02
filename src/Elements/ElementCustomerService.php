@@ -22,6 +22,16 @@ class ElementCustomerService extends BaseElement
     /**
      * @var string
      */
+    private static $singular_name = 'Customer Service';
+
+    /**
+     * @var string
+     */
+    private static $plural_name = 'Customer Service Blocks';
+
+    /**
+     * @var string
+     */
     private static $icon = 'font-icon-info-circled';
 
     /**
