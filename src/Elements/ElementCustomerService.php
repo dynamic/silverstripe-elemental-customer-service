@@ -22,6 +22,16 @@ class ElementCustomerService extends BaseElement
     /**
      * @var string
      */
+    private static $singular_name = 'Customer Service';
+
+    /**
+     * @var string
+     */
+    private static $plural_name = 'Customer Service Blocks';
+
+    /**
+     * @var string
+     */
     private static $icon = 'font-icon-info-circled';
 
     /**
@@ -102,13 +112,5 @@ class ElementCustomerService extends BaseElement
         $blockSchema = parent::provideBlockSchema();
         $blockSchema['content'] = $this->getSummary();
         return $blockSchema;
-    }
-
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-        return _t(__CLASS__.'.BlockType', 'Customer Service');
     }
 }
