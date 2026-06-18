@@ -61,16 +61,6 @@ See [Elemental modules by Dynamic](https://github.com/orgs/dynamic/repositories?
 
 See [SilverStripe Elemental Configuration](https://github.com/dnadesign/silverstripe-elemental#configuration)
 
-## Upgrading from version 3
-
-SilverStripe Elemental Customer Service 4.0 is compatible with SilverStripe 6. Key changes:
-
-- Updated to SilverStripe CMS 6
-- Requires PHP 8.3 or higher
-- Updated to Elemental 6 and Geocoder 4
-- Namespace changes for DataExtension and validation classes
-- No breaking changes to the API or templates
-
 ## Maintainers
 
  *  [Dynamic](https://www.dynamicagency.com) (<dev@dynamicagency.com>)
