@@ -1,22 +1,20 @@
-# SilverStripe Elemental Customer Service Block
+# Silverstripe Elemental Customer Service Block
 
 Display a map, directions, and contact info for your location.
 
-[![CI](https://github.com/dynamic/silverstripe-elemental-customer-service/actions/workflows/ci.yml/badge.svg)](https://github.com/dynamic/silverstripe-elemental-customer-service/actions/workflows/ci.yml)
-[![Sponsors](https://img.shields.io/badge/Sponsor-Dynamic-ff69b4?logo=github-sponsors&logoColor=white)](https://github.com/sponsors/dynamic)
+[![CI](https://github.com/dynamic/silverstripe-elemental-customer-service/actions/workflows/ci.yml/badge.svg)](https://github.com/dynamic/silverstripe-elemental-customer-service/actions/workflows/ci.yml) [![Sponsors](https://img.shields.io/badge/GitHub-Sponsors-ff69b4?logo=github)](https://github.com/sponsors/dynamic)
 
 [![Latest Stable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-customer-service/v/stable)](https://packagist.org/packages/dynamic/silverstripe-elemental-customer-service)
 [![Total Downloads](https://poser.pugx.org/dynamic/silverstripe-elemental-customer-service/downloads)](https://packagist.org/packages/dynamic/silverstripe-elemental-customer-service)
 [![Latest Unstable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-customer-service/v/unstable)](https://packagist.org/packages/dynamic/silverstripe-elemental-customer-service)
 [![License](https://poser.pugx.org/dynamic/silverstripe-elemental-customer-service/license)](https://packagist.org/packages/dynamic/silverstripe-elemental-customer-service)
 
-
 ## Requirements
 
-* SilverStripe ^6.0
 * PHP ^8.3
 * dnadesign/silverstripe-elemental: ^6.0
 * dynamic/silverstripe-geocoder: ^4.0
+* silverstripe/framework: ^6.0
 
 ## Installation
 
@@ -24,7 +22,7 @@ Display a map, directions, and contact info for your location.
 
 ## Usage
 
-Adds a Customer Service block to display a map, directions and contact info for your location. Userful for a Contact Us page.
+Adds a Customer Service block to display a map, directions and contact info for your location. Useful for a Contact Us page.
 
 ### Note
 In order to use the Geocoder and address map, you will need to set two [Google API keys](https://developers.google.com/maps/documentation/javascript/get-api-key). Each key needs to have specific API libraries enabled:
@@ -32,7 +30,7 @@ In order to use the Geocoder and address map, you will need to set two [Google A
     * Geocoding API
 * `map_api_key`
     * Maps JavaScript API
-    *  Maps Static API
+    * Maps Static API
 
 They can be set in your YML file like this:
 
@@ -75,21 +73,24 @@ SilverStripe Elemental Customer Service 4.0 is compatible with SilverStripe 6. K
 
 ## Maintainers
 
-*  [Dynamic](http://www.dynamicagency.com) (<dev@dynamicagency.com>)
+ *  [Dynamic](https://www.dynamicagency.com) (<dev@dynamicagency.com>)
 
 ## Bugtracker
-Bugs are tracked in the issues section of this repository. Before submitting an issue please read over
-existing issues to ensure yours is unique.
+
+Bugs are tracked in the issues section of this repository. Before submitting an issue please read over existing issues to ensure yours is unique.
 
 If the issue does look like a new bug:
 
-- Create a new issue
-- Describe the steps required to reproduce your issue, and the expected outcome. Unit tests, screenshots
-  and screencasts can help here.
-- Describe your environment as detailed as possible: SilverStripe version, Browser, PHP version,
-  Operating System, any installed SilverStripe modules.
+ - Create a new issue
+ - Describe the steps required to reproduce your issue, and the expected outcome. Unit tests, screenshots and screencasts can help here.
+ - Describe your environment as detailed as possible: SilverStripe version, Browser, PHP version, Operating System, any installed SilverStripe modules.
 
 Please report security issues to the module maintainers directly. Please don't file security issues in the bugtracker.
 
 ## Development and contribution
+
 If you would like to make contributions to the module please ensure you raise a pull request and discuss with the module maintainers.
+
+## License
+
+See [License](LICENSE.md)
