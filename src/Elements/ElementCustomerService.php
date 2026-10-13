@@ -12,6 +12,8 @@ use SilverStripe\ORM\FieldType\DBField;
  * @package Dynamic\Elements\CustomerService\Elements
  *
  * @property string $Title
+ * @property string $Content
+ * @property string $LocationName
  * @property string $Website
  * @property string $Phone
  * @property string $Email
